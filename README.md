@@ -26,7 +26,7 @@ Just click on it to see the ingredients and instructions for the recipe. We wish
 
 ### What I learned
 
-I practiced with Redux Toolkit and learned to handle async actions with Redux Thunk Middleware. Also first time u
+I practiced with Redux Toolkit and learned to handle async actions with Redux Thunk Middleware.
 
 ### Useful resources
 
