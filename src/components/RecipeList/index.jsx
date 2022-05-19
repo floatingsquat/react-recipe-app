@@ -43,9 +43,13 @@ function RecipeList() {
         </>
       ) : listingMode === Constant.LISTING_MODE_SEARCH ? (
         <div className="searched-recipes">
-          {searchedItems.map((rItem) => (
-            <RecipeItem {...rItem} key={rItem.idMeal} />
-          ))}
+          {searchedItems ? (
+            searchedItems.map((rItem) => (
+              <RecipeItem {...rItem} key={rItem.idMeal} />
+            ))
+          ) : (
+            <h2>Not found! Try to search something else...</h2>
+          )}
         </div>
       ) : (
         // Default Home Listing
