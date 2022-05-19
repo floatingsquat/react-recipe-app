@@ -14,7 +14,9 @@ function Search() {
 
   useEffect(() => {
     const delayedSearch = setTimeout(() => {
-      dispatch(getSearchedRecipes(searchQuery));
+      if (searchQuery) {
+        dispatch(getSearchedRecipes(searchQuery));
+      }
     }, 500);
 
     return () => clearTimeout(delayedSearch);
